@@ -1,0 +1,160 @@
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+:root {
+  ---color-tandori: #b85b44cc;
+  --color-black: #343131;
+}
+
+.tandori {
+  color: var(---color-tandori);
+}
+
+.tandori-bold {
+  color: var(---color-tandori);
+  font-weight: bold;
+}
+
+.tandori-underline {
+  text-decoration: var(---color-tandori) underline;
+  text-decoration-thickness: 2px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: var(--color-black);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.intro {
+  grid-column: 2 / 12;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15% 10px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.content-section {
+  background-color: rgba(255, 255, 255, 0.348);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.left,
+.right {
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  background-color: var(--color-black);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: auto;
+}
+
+p {
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.welcome {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+ul {
+  padding: 1rem;
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+  margin-bottom: 5px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 0.5px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
+}
+
+.mbot-0 {
+  margin-bottom: 0;
+}
